@@ -4,11 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Jas Fin">
 <title>Jas Fin</title>
 <style>
-:root{--bg:#f3f5fb;--card:#fff;--tx:#1b2033;--mu:#7a8199;--ac:#5b6cff;--ln:#e6e9f4;--ok:#1fa76a;--bad:#e5484d;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1220;--card:#1a1e33;--tx:#eef0fa;--mu:#8b92b0;--ln:#2a2f4a;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#0f1220;--card:#1a1e33;--tx:#eef0fa;--mu:#8b92b0;--ln:#2a2f4a;color-scheme:dark}
+body::before{content:"";position:fixed;top:0;left:0;right:0;height:env(safe-area-inset-top,0px);background:var(--bar);z-index:30}
+:root{--bar:#5b6cff;--bg:#f3f5fb;--card:#fff;--tx:#1b2033;--mu:#7a8199;--ac:#5b6cff;--ln:#e6e9f4;--ok:#1fa76a;--bad:#e5484d;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bar:#0f1220;--bg:#0f1220;--card:#1a1e33;--tx:#eef0fa;--mu:#8b92b0;--ln:#2a2f4a;color-scheme:dark}}
+:root[data-theme="dark"]{--bar:#0f1220;--bg:#0f1220;--card:#1a1e33;--tx:#eef0fa;--mu:#8b92b0;--ln:#2a2f4a;color-scheme:dark}
 *{box-sizing:border-box}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.4 -apple-system,system-ui,"Segoe UI",Roboto,sans-serif;padding-bottom:96px}
